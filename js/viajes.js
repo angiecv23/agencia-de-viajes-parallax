@@ -2,7 +2,6 @@ const parallax = document.querySelector(".parallax");
 const sun = document.querySelector("#sun");
 const mountainBlue = document.querySelector("#mountain-blue");
 const mountainRed = document.querySelector("#mountain-red");
-// const man = document.querySelector("#man");
 const girl = document.querySelector("#girl");
 const plants = document.querySelector("#plants");
 const header = document.querySelector("header");
