@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Despega - Efecto Parallax</title>
+    <link rel="stylesheet" href="css/viajes.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Despega<span class="dot">.</span></a>
+      <ul class="menu">
+        <li><a href="#" class="nav-link">Inicio</a></li>
+        <li><a href=".destinos" class="nav-link">Destinos</a></li>
+        <li><a href=".promos" class="nav-link">Ofertas</a></li>
+        <li><a href=".contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </header>
+
+    <section class="parallax">
+      <h2 id="titulo" class="titulo">DESCUBRE TU PRÓXIMO DESTINO</h2>
+      <img src="img/sun.png" id="sun" />
+      <img src="img/mountain-blue.png" id="mountain-blue" />
+      <img src="img/mountain-red.png" id="mountain-red" />
+      <img src="img/girl.png" id="girl" />
+      <img src="img/plants.png" id="plants" />
+    </section>
+
+    <section class="destinos">
+      <div class="section-title">
+        <h2>Destinos Más Visitados</h2>
+        <p>
+          Encuentra inspiración para tu próxima aventura en estos lugares
+          mágicos.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-img-container">
+            <img src="img/paris.jpg" alt="París" />
+            <span class="badge">Popular</span>
+          </div>
+          <div class="card-content">
+            <h3>París, Francia</h3>
+            <p>
+              La ciudad de la luz te espera con su arte, su arquitectura icónica
+              y su inigualable gastronomía.
+            </p>
+            <div class="card-footer">
+              <span class="price">Desde $1,200</span>
+              <a href="#" class="btn-card">Explorar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-container">
+            <img src="img/tokio.jpg" alt="Tokio" />
+            <span class="badge">Tendencia</span>
+          </div>
+          <div class="card-content">
+            <h3>Tokio, Japón</h3>
+            <p>
+              El balance perfecto entre la tradición milenaria asiática y la
+              tecnología futurista ultramoderna.
+            </p>
+            <div class="card-footer">
+              <span class="price">Desde $1,450</span>
+              <a href="#" class="btn-card">Explorar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-container">
+            <img src="img/cusco.jpg" alt="Cusco" />
+            <span class="badge">Aventura</span>
+          </div>
+          <div class="card-content">
+            <h3>Cusco, Perú</h3>
+            <p>
+              Camina por el histórico Valle Sagrado y descubre los misterios
+              ocultos de la ciudadela de Machu Picchu.
+            </p>
+            <div class="card-footer">
+              <span class="price">Desde $850</span>
+              <a href="#" class="btn-card">Explorar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img-container">
+            <img src="img/rio_janeiro.jpg" alt="Río de Janeiro" />
+            <span class="badge">Playa & Fiesta</span>
+          </div>
+          <div class="card-content">
+            <h3>Río de Janeiro, Brasil</h3>
+            <p>
+              Disfruta de la energía de Copacabana, la imponente vista del
+              Cristo Redentor y el ritmo del auténtico carnaval.
+            </p>
+            <div class="card-footer">
+              <span class="price">Desde $990</span>
+              <a href="#" class="btn-card">Explorar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="promos">
+      <div class="section-title">
+        <h2>Ofertas Especiales</h2>
+        <p>
+          Aprovecha nuestros descuentos por tiempo limitado en vuelos de
+          temporada.
+        </p>
+      </div>
+
+      <div class="promo-container">
+        <div class="promo-card animate-promo">
+          <div class="promo-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3>Lima &rarr; Cancún</h3>
+          <p class="promo-desc">Vuelo directo + Equipaje de mano incluido.</p>
+          <div class="promo-price">
+            <span class="old-price">$549</span>
+            <span class="current-price">$399</span>
+          </div>
+          <a href="#" class="btn-promo">Reservar Ahora</a>
+        </div>
+
+        <div class="promo-card animate-promo">
+          <div class="promo-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3>Lima &rarr; Madrid</h3>
+          <p class="promo-desc">
+            Tarifa flexible, ideal para viajes de verano.
+          </p>
+          <div class="promo-price">
+            <span class="old-price">$899</span>
+            <span class="current-price">$699</span>
+          </div>
+          <a href="#" class="btn-promo">Reservar Ahora</a>
+        </div>
+
+        <div class="promo-card animate-promo">
+          <div class="promo-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <h3>Lima &rarr; Río de Janeiro</h3>
+          <p class="promo-desc">
+            ¡Especial Carnaval! Incluye tasas e impuestos.
+          </p>
+          <div class="promo-price">
+            <span class="old-price">$620</span>
+            <span class="current-price">$450</span>
+          </div>
+          <a href="#" class="btn-promo">Reservar Ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto">
+      <div class="section-title">
+        <h2>Ponte en Contacto</h2>
+        <p>
+          ¿Tienes dudas? Déjanos un mensaje y un asesor de viajes te responderá
+          pronto.
+        </p>
+      </div>
+
+      <div class="contacto-wrapper">
+        <form class="contacto-form" id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="nombre"
+              placeholder="Tu Nombre Completo"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="celular"
+              placeholder="Número de Celular (ej: 987654321)"
+              pattern="[0-9]{9,15}"
+              title="Por favor, ingresa un número de celular válido"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="mensaje"
+              placeholder="Cuéntanos cuál es tu destino soñado..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2026 Despega S.A. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/viajes.js"></script>
+  </body>
+</html>
